@@ -1,0 +1,67 @@
+/* Updated styles.css for Ore's Glow website */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:  font-family: 'Playfair Display', serif;
+    background: url('assets/soft-brown-cream.gif') no-repeat center center fixed;
+    background-size: cover;
+    color: #3d1f14;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+}
+
+header img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+header img:hover {
+    transform: scale(1.1);
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #5c2a1d;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #9c5b40;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #7a4a3a;
+}
+
+/* Placeholder page styles */
+.placeholder {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+    color: #5c2a1d;
+}
