@@ -3,10 +3,18 @@
 body {
     margin: 0;
     padding: 0;
-    font-family:  font-family: 'Playfair Display', serif;
+    font-family: 'Georgia', serif;
     background: url('assets/soft-brown-cream.gif') no-repeat center center fixed;
     background-size: cover;
     color: #3d1f14;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+p, li, span, a, div {
+    font-family: 'Georgia', serif;
 }
 
 header {
