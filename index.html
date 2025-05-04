@@ -13,11 +13,19 @@
     <meta name="apple-mobile-web-app-title" content="Ore's Glow">
     <link rel="manifest" href="/site.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-  
+<!-- MailerLite Universal -->
+<script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '1489480');
+</script>
+<!-- End MailerLite Universal -->
 </head>
 <body>
     <header>
-        <img src="assets/oresglow-logo.png" alt="Ore's Glow Logo" class="logo">
+        <img id="logo" src="assets/oresglow-logo.png" alt="Ore's Glow Logo" class="logo">
         <h1>Welcome to Ore's Glow</h1>
     </header>
     <main>
@@ -30,14 +38,16 @@
     <footer>
         <p>&copy; 2025 Ore's Glow. All rights reserved.</p>
     </footer>
-    <!-- MailerLite Universal -->
-<script>
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-    ml('account', '1489480');
-</script>
-<!-- End MailerLite Universal -->
+    
+    <script>
+        const logo = document.getElementById('logo');
+        logo.addEventListener('mouseenter', () => {
+            logo.src = 'assets/oresglow-logo-hover.gif';
+        });
+        logo.addEventListener('mouseleave', () => {
+            logo.src = 'assets/oresglow-logo.png';
+        });
+    </script>
+        
 </body>
 </html>
