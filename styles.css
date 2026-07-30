@@ -123,14 +123,17 @@ footer {
 
 .shop-cards {
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 40px;
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .shop-card {
-    width: 320px;
-    padding: 35px;
+    width: 180px;
+    height: 120px;
+    padding: 18px;
     border-radius: 20px;
     background: #f5e3d2;
     text-decoration: italic;
@@ -146,4 +149,13 @@ footer {
     box-shadow: 0 15px 35px #36221e;
 
     background: #f5e3d2;
+}
+
+.shop-card h3 {
+    font-size: 1.5rem;
+
+}
+
+.shop-card p {
+    font-size: 0.75rem; /*Try 16px*/
 }
