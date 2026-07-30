@@ -101,5 +101,49 @@ footer {
 
 .shop-heading {
     margin-top: 60px;
+    margin-bottom: 60px;
     text-align: center;
+}
+
+.shop-subheading {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.shop-selection {
+    gap: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.407);
+    max-width: 900px;
+}
+
+.shop-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.shop-card {
+    width: 320px;
+    padding: 35px;
+    border-radius: 20px;
+    background: #f5e3d2;
+    text-decoration: italic;
+    color: #3e2723;
+    transition: all 0.5s ease;
+}
+
+.shop-card:hover {
+
+    transform: translateY(-10px);
+    border-radius: 75px;
+
+    box-shadow: 0 15px 35px #36221e;
+
+    background: #f5e3d2;
 }
