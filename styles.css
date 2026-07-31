@@ -89,7 +89,7 @@ nav {
     align-items: center;
 }
 
-nav ul {
+nav > ul {
 
     display: flex;
 
@@ -109,15 +109,41 @@ nav a {
 
     font-weight: 500;
 
-    transition: .3s;
+    transition: color 0.3s ease;
+
+    position: relative;
 
 }
 
+nav > ul > li > a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -5px;
+
+    width: 0;
+
+    height: 2px;
+
+    background: var(--gold);
+
+    transition: width .3s ease;
+
+}
 
 nav a:hover {
 
     color: var(--gold);
-    text-decoration: underline;
+
+}
+
+nav > ul > li > a:hover::after {
+
+    width: 100%;
 
 }
 
@@ -125,27 +151,51 @@ nav a:hover {
     position: relative;
 }
 
-.dropdown-menu {
-    display: none;
+.dropdown::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 30px;
+}
 
+.dropdown-menu {
+    display: flex;
+    flex-direction: column;
     position: absolute;
 
     top: 100%;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(12px);
 
-    background: var(--brown);          /* your brand brown */
-    border: 2px solid var(--cream);    /* your brand cream */
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    margin-top: 10px;
 
-    padding: 10px 0;
+    max-width: 220px;
 
-    min-width: 180px;
+    background: color rgba(62, 39, 35, 0.806);          /* your brand brown */     
+    border: 1.5px solid var(--cream);    /* your brand cream */
+    border-radius: 16px;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+
+    padding: 12px 0;
+
+    list-style: none;
+
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s ease;
+
+    z-index: 999;
+
+    visibility: hidden;
+
+    backdrop-filter: blur(10px);
 
 }
 
 .dropdown-menu li {
-    padding: 10px 20px;
+    margin: 6px 0;
 }
 
 .dropdown-menu li a {
@@ -153,18 +203,41 @@ nav a:hover {
     text-decoration: none;
     display: block;
     padding: 12px 18px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
     display: block;
 }
 
 
 .dropdown-menu li a:hover {
-    background-color: var(--gold);  /* warm ivory */
+    background: var(--gold);           /* your brand gold */
     color: var(--cream);              /* your brand cream */
     border-radius: 8px;
 }
+
+.arrow {
+
+    display: inline-block;
+    color: var(--cream);
+
+    margin-left: 6px;
+
+    transition: transform .3s ease;
+
+}
+
+.dropdown:hover .arrow {
+
+    transform: rotate(180deg);
+
+}
+
 
 /* ========================= HERO SECTION ========================= */
 
