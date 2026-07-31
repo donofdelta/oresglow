@@ -119,7 +119,8 @@ footer {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.407);
     max-width: 900px;
-    
+    margin: 60px auto;
+    padding: 40px;
 }
 
 .shop-cards {
@@ -138,7 +139,7 @@ footer {
     padding: 18px;
     border-radius: 20px;
     background: #f5e3d2;
-    text-decoration: italic;
+    font-style: italic;
     color: #3e2723;
     transition: all 0.5s ease;
 }
@@ -146,7 +147,7 @@ footer {
 .shop-card:hover {
 
     transform: translateY(-10px);
-    border-radius: 75px;
+    border-radius: 25px;
 
     box-shadow: 0 15px 35px #36221e;
 
