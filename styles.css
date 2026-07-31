@@ -287,9 +287,6 @@ nav > ul > li > a:hover::after {
     gap: 20px;
     text-align: center;
     font-size: 1.2rem;
-    background-color: rgba(255, 255, 255, 0.401);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.407);
     max-width: 900px;
     margin: 60px auto;
     padding: 40px;
